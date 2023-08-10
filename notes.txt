@@ -1,0 +1,31 @@
+> python3 manage.py makemigrations
+(
+    generates database migration files based on changes
+    you've made to your models. Migrations are a way to keep
+    your database schema in sync with your Django models.
+
+    When you define or modify models in your Django application, 
+    such as adding new fields, changing existing fields, or altering 
+    relationships between models, you need to create migration files 
+    that capture these changes. The makemigrations command is used to 
+    analyze your models and generate these migration files.
+)
+
+> python manage.py migrate
+
+> create serializers 
+(
+    Configure Serializers:
+
+Create serializers using Django REST framework's serializers. Serializers convert 
+complex data types (such as Django model instances) into native Python data types, 
+which can be easily rendered into JSON or other content types.
+)
+
+
+Create Views and ViewSets:
+
+Define views or viewsets that handle the API requests and responses. Django REST framework provides APIView classes for custom views and ModelViewSet classes for automatic CRUD operations.
+Configure URLs:
+
+Define URL patterns to map API endpoints to your views or viewsets. Use Django's urls.py to configure these patterns.
